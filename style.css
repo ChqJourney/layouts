@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  font-size: 12px;
   color-scheme: light dark;
 
   font-synthesis: none;
@@ -85,6 +85,7 @@ main {
   text-align: center;
   /* height: 100%; */
   transition: width 0.3s ease-in-out;
+  box-shadow: 0 4px 6px -1px #d8b4fe, 0 2px 4px -2px #38bdf8;
 }
 
 
@@ -115,13 +116,15 @@ main {
   #toggle-btn {
     display: block;
     width: auto;
-    height: 20px;
+    height: 100%;
     background: none;
     border: none;
     cursor: pointer;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 0%;
+    fill:#000
+    /* color:#213547 */
   }
   .sidenav{
     flex:1;
@@ -215,11 +218,26 @@ main {
     color: #f9f9f9;
     background-color: #242424;
   }
-
+#toggle-btn{
+  fill:#ddd;
+}
   a:hover {
     color: #747bff;
   }
-
+  .sidebar{
+    background-color: #333;
+    color: #fff;
+  }
+  .sidenav{
+    background-color: #333;
+    color: #fff;
+  }
+  .sidenav ul li{
+    border-bottom: 1px solid rgb(92, 91, 91);
+  }
+  .sidenav ul li a {
+    color: #fff;
+  }
   button {
     background-color: #363636;
   }
